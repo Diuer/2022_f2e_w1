@@ -1,5 +1,12 @@
 .App {
-  
+  height: 11221px;
+
+  .header-logo {
+    position: fixed;
+    width: 200px;
+    margin: 30px 40px;
+    opacity: 0;
+  }
 }
 
 @media (max-width: 1920px) {

@@ -2,9 +2,12 @@ import { useEffect } from "react";
 
 import "./App.scss";
 
+import headerLogo from "./assets/logo/logo.png";
+
 import runAnimation from "./gsap/animate";
 
 import BannerSection from "./sections/banner";
+import FaqSection from "./sections/faq";
 
 function App() {
   useEffect(() => {
@@ -17,11 +20,13 @@ function App() {
 
   return (
     <div className="App">
+      <img className="header-logo" src={headerLogo} alt="header-logo" />
       <BannerSection />
+      <FaqSection />
+      {/* <div style={{ height: "100vh" }}></div>
       <div style={{ height: "100vh" }}></div>
       <div style={{ height: "100vh" }}></div>
-      <div style={{ height: "100vh" }}></div>
-      <div style={{ height: "100vh" }}></div>
+      <div style={{ height: "100vh" }}></div> */}
     </div>
   );
 }

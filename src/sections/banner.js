@@ -2,6 +2,7 @@ import "./banner.scss";
 
 import bgDecorate01 from "../assets/bg/bg_decorate_01.png";
 import bgDecorate05 from "../assets/bg/bg_decorate_05.png";
+import bgDecorate09 from "../assets/bg/bg_decorate_09.png";
 
 import startBg from "../assets/main/start.png";
 import roadBg from "../assets/main/road.png";
@@ -20,7 +21,6 @@ const bannerSection = () => {
   return (
     <div className="banner-section">
       <div className="banner-background"></div>
-      {/* <div className="section section-1"> */}
       <div className="bg-decorate-container">
         <img
           className="bg-decorate bg-decorate-001"
@@ -49,7 +49,16 @@ const bannerSection = () => {
         <img className="character-2" src={character2} alt="character-2" />
         <img className="character-3" src={character3} alt="character-3" />
       </div>
-      {/* </div> */}
+      <img
+        className="bg-decorate-09 bg-decorate-09-l"
+        src={bgDecorate09}
+        alt="bg-decorate-09-l"
+      />
+      <img
+        className="bg-decorate-09 bg-decorate-09-r"
+        src={bgDecorate09}
+        alt="bg-decorate-09-r"
+      />
     </div>
   );
 };

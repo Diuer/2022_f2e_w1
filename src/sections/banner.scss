@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   height: 100vh;
+  z-index: 10;
 
   .banner-background {
     position: fixed;
@@ -113,6 +114,23 @@
 
     .character-2 {
       width: 370px;
+    }
+  }
+
+  .bg-decorate-09 {
+    position: fixed;
+    width: 150px;
+    bottom: 0;
+    opacity: 0;
+
+    &-l {
+      left: 10%;
+      transform: matrix(-1, 0, 0, 1, 0, 0) translateX(-50%);
+    }
+
+    &-r {
+      right: 10%;
+      transform: translateX(-50%);
     }
   }
   

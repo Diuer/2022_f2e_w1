@@ -56,7 +56,78 @@ const getBannerSection = () => {
         position: "absolute",
       },
       "<"
-    );
+    )
+    .to(".traffic-light-container", {
+      opacity: 0,
+      delay: 5,
+    })
+    .to(".start-bg", {
+      opacity: 0,
+    })
+    .to(
+      ".bg-decorate",
+      {
+        display: "none",
+      },
+      "<"
+    )
+    // .to(".character-1", {
+    //   transform: "scale(0.5) translateY(40%)",
+    //   duration: 10,
+    // })
+    // .to(
+    //   ".character-2",
+    //   {
+    //     transform: "scale(0.5) translateY(40%)",
+    //     duration: 10,
+    //   },
+    //   "<"
+    // )
+    // .to(
+    //   ".character-3",
+    //   {
+    //     transform: "scale(0.5) translateY(40%)",
+    //     duration: 10,
+    //   },
+    //   "<"
+    // )
+    .to(
+      ".bg-decorate-09",
+      {
+        opacity: 1,
+      },
+      "<"
+    )
+    .to(".bg-decorate-09-l", {
+      left: "25%",
+      transform: "matrix(-1, 0, 0, 1, 0, 0) scale(0.7) translateY(35px)",
+    })
+    .to(
+      ".bg-decorate-09-r",
+      {
+        right: "25%",
+        transform: "scale(0.7) translateY(35px)",
+      },
+      "<"
+    )
+    .to(
+      ".character-conatiner",
+      {
+        transform: "scale(0.7) translateY(calc(40% * 0.7))",
+      },
+      "<"
+    )
+    .to(
+      ".road-bg",
+      {
+        transform: "scale(0.7) translateY(calc(40% * 0.7))",
+      },
+      "<"
+    )
+    .to(".header-logo", {
+      opacity: 1,
+    });
+  // scale(0.5) translateY(40%)
   return bannerSection;
 };
 
